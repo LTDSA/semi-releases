@@ -5,7 +5,7 @@ export default defineConfig({
   title: 'Semi',
   description: '可通过插件扩展的桌面设备管理应用，支持 macOS 和 Windows',
   lang: 'zh-CN',
-  base: '/semi-releases/',
+  base: '/',
   cleanUrls: true,
   markdown: { lineNumbers: true },
   themeConfig: {
