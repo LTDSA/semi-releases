@@ -1,0 +1,192 @@
+[
+  {
+    "text": "开始开发",
+    "items": [
+      {
+        "text": "概览",
+        "link": "/developer/"
+      },
+      {
+        "text": "快速开始",
+        "link": "/developer/getting-started"
+      },
+      {
+        "text": "插件包声明",
+        "link": "/developer/package"
+      },
+      {
+        "text": "构建与分发",
+        "link": "/developer/distribution"
+      }
+    ]
+  },
+  {
+    "text": "SDK 指南",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "宿主与生命周期",
+        "link": "/developer/lifecycle"
+      },
+      {
+        "text": "账号与登录",
+        "link": "/developer/accounts"
+      },
+      {
+        "text": "设备与适配器",
+        "link": "/developer/devices"
+      },
+      {
+        "text": "后台与服务",
+        "link": "/developer/background"
+      },
+      {
+        "text": "视图与界面",
+        "link": "/developer/views"
+      },
+      {
+        "text": "存储与网络",
+        "link": "/developer/storage-network"
+      },
+      {
+        "text": "事件与错误",
+        "link": "/developer/events"
+      }
+    ]
+  },
+  {
+    "text": "API 参考",
+    "items": [
+      {
+        "text": "API 概览",
+        "link": "/developer/api"
+      },
+      {
+        "text": "基础",
+        "collapsed": false,
+        "items": [
+          {
+            "text": "系统信息",
+            "link": "/developer/api/base/system/getAppBaseInfo"
+          },
+          {
+            "text": "应用级事件",
+            "link": "/developer/api/base/app/app-events"
+          },
+          {
+            "text": "初始化与事件订阅",
+            "link": "/developer/api/base/app/runtime"
+          }
+        ]
+      },
+      {
+        "text": "路由",
+        "collapsed": false,
+        "items": [
+          {
+            "text": "打开与关闭视图",
+            "link": "/developer/api/route/views"
+          }
+        ]
+      },
+      {
+        "text": "界面",
+        "collapsed": false,
+        "items": [
+          {
+            "text": "窗口与交互",
+            "link": "/developer/api/ui/window"
+          },
+          {
+            "text": "托盘",
+            "link": "/developer/api/ui/tray"
+          }
+        ]
+      },
+      {
+        "text": "网络",
+        "collapsed": false,
+        "items": [
+          {
+            "text": "request",
+            "link": "/developer/api/network/request/request"
+          },
+          {
+            "text": "downloadFile",
+            "link": "/developer/api/network/download/downloadFile"
+          }
+        ]
+      },
+      {
+        "text": "数据缓存",
+        "collapsed": false,
+        "items": [
+          {
+            "text": "持久化 KV",
+            "link": "/developer/api/storage/kv"
+          },
+          {
+            "text": "缓存管理",
+            "link": "/developer/api/storage/cache"
+          }
+        ]
+      },
+      {
+        "text": "文件",
+        "collapsed": false,
+        "items": [
+          {
+            "text": "插件文件",
+            "link": "/developer/api/file/files"
+          }
+        ]
+      },
+      {
+        "text": "开放接口",
+        "collapsed": false,
+        "items": [
+          {
+            "text": "login",
+            "link": "/developer/api/open-api/login/login"
+          },
+          {
+            "text": "authorize",
+            "link": "/developer/api/open-api/authorize/authorize"
+          }
+        ]
+      },
+      {
+        "text": "设备",
+        "collapsed": false,
+        "items": [
+          {
+            "text": "设备能力",
+            "link": "/developer/api/device/devices"
+          },
+          {
+            "text": "屏幕",
+            "link": "/developer/api/device/screen"
+          }
+        ]
+      },
+      {
+        "text": "Semi 扩展",
+        "collapsed": false,
+        "items": [
+          {
+            "text": "插件后台",
+            "link": "/developer/api/plugin/background"
+          },
+          {
+            "text": "提供者与服务",
+            "link": "/developer/api/plugin/providers"
+          },
+          {
+            "text": "命令与 Intent",
+            "link": "/developer/api/plugin/commands"
+          }
+        ]
+      }
+    ]
+  }
+]
