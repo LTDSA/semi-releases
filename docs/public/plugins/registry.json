@@ -1,4 +1,20 @@
 {
   "version": 1,
-  "plugins": []
+  "plugins": [
+    {
+      "id": "@semi-app/miplay",
+      "version": "1.0.0",
+      "semi": ">=0.7.2",
+      "name": "音频互联",
+      "author": "LTDSA",
+      "description": "连接智能音箱",
+      "icon": "music",
+      "color": "purple",
+      "integrity": "sha512-2kkuf4KCcJG6mISLmKHFx/mD2wh5HSwKDfGozKrdN9M3FTJ2EtSQ548awoSr0QK4OQiYrOYKPidd8SPF4nOg5g==",
+      "iconUrl": {
+        "light": "./icons/miplay/light.webp",
+        "dark": "./icons/miplay/dark.webp"
+      }
+    }
+  ]
 }
