@@ -3,14 +3,14 @@
   "plugins": [
     {
       "id": "@semi-app/miplay",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "semi": ">=0.7.2",
       "name": "音频互联",
       "author": "LTDSA",
       "description": "连接智能音箱",
-      "icon": "music",
+      "icon": "./dist/icon.svg",
       "color": "purple",
-      "integrity": "sha512-2kkuf4KCcJG6mISLmKHFx/mD2wh5HSwKDfGozKrdN9M3FTJ2EtSQ548awoSr0QK4OQiYrOYKPidd8SPF4nOg5g==",
+      "integrity": "sha512-xc3G9xKTg95gezQ/UM8XQvTbAREg6gzBnf/giZgEAUtGp07UZz7AxTGUQrWltcXpGNESSM1+qNI5isXPPudiyw==",
       "iconUrl": {
         "light": "./icons/miplay/light.webp",
         "dark": "./icons/miplay/dark.webp"
@@ -18,14 +18,14 @@
     },
     {
       "id": "@semi-app/smarthome",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "semi": ">=0.7.2",
       "name": "智能设备",
       "author": "LTDSA",
       "description": "查看与控制米家智能设备",
       "icon": "./dist/icon.svg",
       "color": "green",
-      "integrity": "sha512-zU+VH+DQipnpCTorJ4Ibmn3K9HutyDHN53D4HNgP5gTVspnnCKc+k/dmJ7gvEze7udv796+VxuHcszG4+2hgRg==",
+      "integrity": "sha512-7R4bjIhVfqJEoTj6pINugDWlmllVdrJ1jPdjbtSdMBbBktHdD6kFNYPiu6IrfIo2qfDZy/NwEnNdPAeFL/pN9w==",
       "iconUrl": {
         "light": "./icons/smarthome/light.webp",
         "dark": "./icons/smarthome/dark.webp"
