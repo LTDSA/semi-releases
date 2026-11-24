@@ -1,5 +1,5 @@
 ---
-description: 用 Vite 创建第一个 Semi 插件。
+description: 从 npm 安装 Semi 插件 SDK，用 Vite 创建第一个插件。
 ---
 
 # 快速开始
@@ -8,17 +8,15 @@ description: 用 Vite 创建第一个 Semi 插件。
 
 ## 1. 准备 SDK
 
-创建独立的插件项目。所需 SDK 版本已发布到 npm 时，可直接安装：
+创建插件项目，从 npm 安装 SDK。运行本例需要 Semi 0.8.0 或更新版本。
 
 ```sh
 mkdir semi-example
 cd semi-example
 npm init -y
-npm install @semi-app/plugin-sdk@0.7.2
+npm install @semi-app/plugin-sdk@0.8.0
 npm install -D vite typescript
 ```
-
-如果该版本尚未发布到 npm，可使用已取得的 SDK 安装包，将 SDK 安装命令替换为 `npm install /path/to/semi-app-plugin-sdk-0.7.2.tgz`。
 
 ## 2. 声明插件
 
@@ -36,7 +34,7 @@ npm install -D vite typescript
         "build": "vite build --base=./"
     },
     "engines": {
-        "semi": ">=0.7.2"
+        "semi": ">=0.8.0"
     },
     "semi": {
         "displayName": "我的示例",

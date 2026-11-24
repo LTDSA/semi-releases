@@ -13,7 +13,7 @@ Semi 读取标准 `package.json`，插件声明放在 `semi` 对象中。
 | `files` | 随 npm 包发行的文件，通常为 `["dist"]` |
 | `dependencies` | 运行依赖 |
 | `scripts` | 插件自己的构建、检查和打包命令 |
-| `engines.semi` | 支持的宿主版本范围，例如 `>=0.7.2` |
+| `engines.semi` | 支持的宿主版本范围，例如 `>=0.8.0` |
 
 ## semi 字段
 
@@ -84,7 +84,7 @@ Semi 读取标准 `package.json`，插件声明放在 `semi` 对象中。
 | `statusbar` | `id`、`title`、`command` |
 | `deviceTools` | `id`、`title`、`view`、可选 `icon`／`color` |
 
-侧栏常用图标为 `intro`、`chart`、`config`、`token`、`tree`、`switch`。设备适配器自己的卡片操作和工具由运行时 `menu()` 返回，见[设备与适配器](./devices.md)。
+侧栏和设备工具的 `icon` 可引用本包图片，例如 `./dist/icons/tool.svg`。侧栏省略时沿用插件图标。设备适配器也可通过运行时 `menu()` 声明卡片操作和工具，见[设备与适配器](./devices.md)。
 
 ## 依赖与发行
 

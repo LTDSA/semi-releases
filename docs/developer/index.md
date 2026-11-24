@@ -1,12 +1,14 @@
 ---
-description: 使用 Semi SDK 创建插件，扩展设备、账号、服务和界面。
+description: 从 npm 安装 Semi 插件 SDK，使用 JavaScript 或 TypeScript 扩展设备、账号、服务和界面。
 ---
 
 # SDK 与插件开发
 
-<span class="sdk-version">SDK 0.7.2</span>
+<span class="sdk-version">SDK 0.8.0</span>
 
 Semi 插件是标准 npm 包。使用 JavaScript 或 TypeScript 编写页面和后台，通过 SDK 连接宿主提供的账号、设备、存储与界面能力。
+
+[`@semi-app/plugin-sdk`](https://www.npmjs.com/package/@semi-app/plugin-sdk) 已在 npm 发布。本指南使用 SDK 0.8.0，对应 Semi 0.8.0。
 
 <div class="sdk-paths">
 <div>

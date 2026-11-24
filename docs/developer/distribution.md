@@ -41,7 +41,7 @@ SDK 跟随 Semi 发布，插件自己的版本独立维护：
 {
     "name": "my-semi-example",
     "version": "1.0.0",
-    "engines": { "semi": ">=0.7.2" }
+    "engines": { "semi": ">=0.8.0" }
 }
 ```
 
