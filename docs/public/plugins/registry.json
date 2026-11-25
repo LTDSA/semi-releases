@@ -18,14 +18,14 @@
     },
     {
       "id": "@semi-app/smarthome",
-      "version": "1.0.3",
+      "version": "1.0.4",
       "semi": ">=0.7.2",
       "name": "智能设备",
       "author": "LTDSA",
       "description": "查看与控制米家智能设备",
       "icon": "./dist/icon.svg",
       "color": "green",
-      "integrity": "sha512-lxTxR2E/0og2l2dhq1ymvG/U/P5FXAR/WcM1L3N5MDs+fntuAjZax/VLgbojbXhrFwA9FrDixvGNcjqLhbIBtg==",
+      "integrity": "sha512-x+hzph6unUix99h5r+KpE2j+M4RHf7glHRMtfxV3W8TUb8bXqKfUYJPyCt9eE3BDAcHN/XVg6TFtvu2YWTVEiQ==",
       "iconUrl": {
         "light": "./icons/smarthome/light.webp",
         "dark": "./icons/smarthome/dark.webp"
