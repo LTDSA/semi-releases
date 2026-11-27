@@ -1,8 +1,8 @@
 # semi.downloadFile
 
-| API | 说明 |
-| --- | --- |
-| `semi.downloadFile` | 通过 GET 下载文件，返回状态码、路径和写入字节数。 |
+| API | 起始版本 | 说明 |
+| --- | --- | --- |
+| `semi.downloadFile` | 0.8.0 | 通过 GET 下载文件，返回状态码、路径和写入字节数。 |
 
 | 字段 | 说明 |
 | --- | --- |

@@ -17,6 +17,10 @@
       {
         "text": "构建与分发",
         "link": "/developer/distribution"
+      },
+      {
+        "text": "SDK 更新日志",
+        "link": "/developer/changelog"
       }
     ]
   },

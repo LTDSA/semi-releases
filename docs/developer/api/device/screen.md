@@ -1,8 +1,8 @@
 # 屏幕
 
-| API | 说明 |
-| --- | --- |
-| `semi.setKeepScreenOn` | 接收 `{ keepScreenOn }`，申请或释放屏幕常亮 |
+| API | 起始版本 | 说明 |
+| --- | --- | --- |
+| `semi.setKeepScreenOn` | 0.8.0 | 接收 `{ keepScreenOn }`，申请或释放屏幕常亮 |
 
 ```ts
 await semi.setKeepScreenOn({ keepScreenOn: true });

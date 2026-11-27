@@ -10,6 +10,8 @@ Semi 插件是标准 npm 包。使用 JavaScript 或 TypeScript 编写页面和�
 
 [`@semi-app/plugin-sdk`](https://www.npmjs.com/package/@semi-app/plugin-sdk) 已在 npm 发布。本指南使用 SDK 0.8.0，对应 Semi 0.8.0。
 
+[SDK 更新日志](./changelog.md)
+
 <div class="sdk-paths">
 <div>
 

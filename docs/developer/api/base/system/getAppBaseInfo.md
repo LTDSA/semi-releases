@@ -1,9 +1,9 @@
 # 宿主基础信息
 
-| API | 说明 |
-| --- | --- |
-| `semi.canIUse` | (api) → boolean；同步查询宿主支持的接口 |
-| `semi.getAppBaseInfo` | 读取 Semi 的版本、当前主题和平台，供界面初始化或判断平台差异。同步返回 `{ version, theme, platform }`。 |
+| API | 起始版本 | 说明 |
+| --- | --- | --- |
+| `semi.canIUse` | 0.8.0 | (api) → boolean；同步查询宿主支持的接口 |
+| `semi.getAppBaseInfo` | 0.8.0 | 读取 Semi 的版本、当前主题和平台，供界面初始化或判断平台差异。同步返回 `{ version, theme, platform }`。 |
 
 宿主版本与 SDK 版本可分别从 `getAppBaseInfo().version` 和 `semi.version` 读取。平台为 `darwin`、`win32` 或 `linux`。
 

@@ -1,8 +1,8 @@
 # semi.authorize
 
-| API | 说明 |
-| --- | --- |
-| `semi.authorize` | 接收 `{ scope, reason? }`，支持单项或批量申请。 |
+| API | 起始版本 | 说明 |
+| --- | --- | --- |
+| `semi.authorize` | 0.8.0 | 接收 `{ scope, reason? }`，支持单项或批量申请。 |
 
 `scope` 接受权限字符串或数组，`reason` 可选。单项授权获准后完成，拒绝时返回 `PERMISSION_DENIED`。批量申请返回以权限名为键的布尔结果，允许同一次申请中出现部分获准。
 

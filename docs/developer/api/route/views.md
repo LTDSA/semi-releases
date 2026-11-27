@@ -1,11 +1,11 @@
 # 打开与关闭视图
 
-| API | 说明 |
-| --- | --- |
-| `semi.openView` | 打开本包声明的窗口、页面或覆盖层，可传入启动参数和显式的设备或账号目标。接收 `{ id, params?, target? }`，返回 `{ instanceId }`。 |
-| `semi.closeView` | 接收 `{ instanceId }`，关闭本插件创建的覆盖层。 |
-| `semi.closeCurrentView` | 关闭当前运行实例。 |
-| `semi.getViewOptions` | 读取打开当前视图时传入的参数与绑定目标，例如设备详情页需要的设备 ID。返回 `{ viewId, params, target }`。 |
+| API | 起始版本 | 说明 |
+| --- | --- | --- |
+| `semi.openView` | 0.8.0 | 打开本包声明的窗口、页面或覆盖层，可传入启动参数和显式的设备或账号目标。接收 `{ id, params?, target? }`，返回 `{ instanceId }`。 |
+| `semi.closeView` | 0.8.0 | 接收 `{ instanceId }`，关闭本插件创建的覆盖层。 |
+| `semi.closeCurrentView` | 0.8.0 | 关闭当前运行实例。 |
+| `semi.getViewOptions` | 0.8.0 | 读取打开当前视图时传入的参数与绑定目标，例如设备详情页需要的设备 ID。返回 `{ viewId, params, target }`。 |
 
 打开本包声明的页面时可以传启动参数，以及显式的设备或账号引用。
 

@@ -1,8 +1,8 @@
 # semi.request
 
-| API | 说明 |
-| --- | --- |
-| `semi.request` | 发起公网或局域网 HTTP(S) 请求，返回 `{ data, statusCode, header, cookies }`。 |
+| API | 起始版本 | 说明 |
+| --- | --- | --- |
+| `semi.request` | 0.8.0 | 发起公网或局域网 HTTP(S) 请求，返回 `{ data, statusCode, header, cookies }`。 |
 
 ## 参数
 
