@@ -14,3 +14,24 @@ const { data } = await semi.getStorage<boolean>({ key: 'compact' });
 ```
 
 可重新生成的数据使用[缓存管理](./cache.md)，用户清理插件缓存时会保留这组 API 保存的设置。
+
+## 调用参数与结果
+
+| 调用 | 参数 | Promise 结果 |
+| --- | --- | --- |
+| `getStorage(options)` | `{ key: string }` | `{ data: JSON \| null }` |
+| `setStorage(options)` | `{ key: string, data: JSON }` | 完成，无返回数据 |
+| `removeStorage(options)` | `{ key: string }` | 完成，无返回数据 |
+
+键长为 1–128 字符；值可为字符串、数值、布尔值、数组、JSON 对象或 `null`。保存 `null` 与未保存的键在读取时同样返回 `null`。同一键再次写入会覆盖旧值。跨账号或跨设备的实例应通过各自的作用域读写设置。
+
+传任一回调时返回 `void`。读取成功的回调收到 `{ data, errMsg }`；写入和移除成功时可读 `errMsg`；失败时收到 `{ code, errMsg }`。
+
+```js
+semi.getStorage({
+    key: 'compact',
+    success: ({ data }) => console.log(data ?? false),
+    fail: ({ code, errMsg }) => console.warn(code, errMsg),
+});
+await semi.removeStorage({ key: 'compact' }); // 恢复默认值。
+```

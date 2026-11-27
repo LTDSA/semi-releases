@@ -15,3 +15,25 @@ if (semi.canIUse('getAppBaseInfo')) {
 ```
 
 `canIUse` 接收不含 `semi.` 的公开方法路径，例如 `request` 或 `getDeviceList`。返回值描述当前宿主支持的接口。授权状态和设备能力由相应接口判断。
+
+## semi.canIUse(api)
+
+`api` 为宿主公开方法名，例如 `'downloadFile'`。省略 `semi.` 前缀。同步返回布尔值，可在调用可选接口前判断当前宿主是否实现。权限结果、设备是否在线、插件声明是否符合要求仍在实际调用时检查。
+
+## semi.getAppBaseInfo()
+
+无参数，同步返回当前快照，可在页面或后台初始化时调用。
+
+| 字段 | 类型 | 含义 |
+| --- | --- | --- |
+| `version` | `string` | 正在运行的 Semi 宿主版本 |
+| `theme` | `'light' \| 'dark'` | 宿主当前生效主题 |
+| `platform` | `'darwin' \| 'win32' \| 'linux'` | 平台标识 |
+
+在普通浏览器中直接执行、且未安装测试传输层时，会抛出 `HOST_UNAVAILABLE`。插件包内的 SDK 版本见 `semi.version`。
+
+```js
+const { version, theme, platform } = semi.getAppBaseInfo();
+console.log('Semi', version, 'SDK', semi.version, theme, platform);
+const supportsDownload = semi.canIUse('downloadFile');
+```

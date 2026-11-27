@@ -33,3 +33,28 @@ cancelButton.addEventListener('click', () => task.abort());
 ```
 
 更多编码、跳转和大小规则见[网络用法](../../../storage-network.md#http-请求)。
+
+## 编码、默认值与限制
+
+- `query` 为查询对象，可在任意方法使用。GET 和 HEAD 的 `data` 可传同样的查询对象，也可传已编码的查询字符串。值可用字符串、数字、布尔值、`null`，或这些值的数组。数组编码为同名的多项查询参数。
+- 其他方法的 `data` 可用 JSON、字符串或 `ArrayBuffer`。以 `application/x-www-form-urlencoded` 发送表单时，对象会编码为表单字段。以 `responseType: 'arraybuffer'` 读取二进制时，`dataType` 不参与解析。
+- `header` 是字符串到字符串的映射。可按需设置 UA 等请求头，`Host`、`Content-Length` 等连接和分帧字段由宿主处理。跨源跳转会清理凭据和大部分自定义请求头。需要自行处理 3xx 时传 `redirect: 'manual'`。
+- `timeout` 默认 30,000 毫秒，包含排队时间。可用 `signal` 中止 Promise 写法，用任务的 `abort()` 中止回调写法。响应上限为 8 MiB，`maxBytes` 可设更小的正整数字节数。下载大文件可使用 [downloadFile](../download/downloadFile.md)。
+- 公网和局域网请求无需额外授权。宿主校验初始和跳转地址，回环、链路本地及部分云元数据地址不可访问。
+
+## Promise 示例
+
+```ts
+const response = await semi.request({
+    url: 'https://example.org/catalog.json',
+    query: { tag: ['router', 'storage'] },
+    header: { Accept: 'application/json' },
+    timeout: 5_000,
+});
+if (response.statusCode !== 200) {
+    throw new Error('目录获取失败，HTTP ' + response.statusCode);
+}
+console.log(response.data);
+```
+
+Promise 拒绝时可读取 `SemiError.code`，例如 `TIMEOUT`、`CANCELLED`、`PAYLOAD_TOO_LARGE`。回调模式的 `fail` 收到 `{ code, errMsg }`，`complete` 在成功或失败后都执行。
